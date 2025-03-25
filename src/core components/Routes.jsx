@@ -9,6 +9,11 @@ import JoinUs from "../auths/JoinUs";
 import About from "../pages/about/About";
 import DashboardLayout from "../pages/dashboard/DashboardLayout";
 
+import Contact from "../pages/Contact/Contact";
+
+import DashboardLayout from "../pages/dashboard/DashboardLayout";
+
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -21,7 +26,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/contact",
-                element:<Home/>
+                element:<Contact/>
             },
             {
                 path: "/courses",
@@ -40,7 +45,8 @@ const router = createBrowserRouter([
     },
     {
         path: "/dashboard",
-        element: <DashboardLayout/>
+        element:<DashboardLayout/>
+
     }
 ]);
 
