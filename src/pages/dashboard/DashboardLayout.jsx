@@ -10,10 +10,12 @@ const DashboardLayout = () => {
   
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-800">
+
         <h1 className="text-7xl font-bold text-red-500">OPPS</h1>
         <h2 className="text-2xl mt-4 font-semibold">Page is Under Contruction</h2>
         <p className="text-gray-600 mt-2 text-center">
           We are working to onboard this Page very shortly
+
         </p>
         <button
           onClick={goHome}

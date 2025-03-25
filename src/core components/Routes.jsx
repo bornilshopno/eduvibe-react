@@ -7,6 +7,7 @@ import ErrorPage from "../shared components/ErrorPage";
 import Home from "../pages/home/Home";
 import JoinUs from "../auths/JoinUs";
 import About from "../pages/about/About";
+import DashboardLayout from "../pages/dashboard/DashboardLayout";
 
 import Contact from "../pages/Contact/Contact";
 
@@ -44,7 +45,8 @@ const router = createBrowserRouter([
     },
     {
         path: "/dashboard",
-        element: <DashboardLayout/>
+        element:<DashboardLayout/>
+
     }
 ]);
 
