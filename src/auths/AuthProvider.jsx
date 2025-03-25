@@ -4,15 +4,13 @@ import app from "./firebase.config";
 import useAxiosPublic from "../Hooks/useAxiosPublic";
 
 
-
-
 export const AuthContext = createContext(null)
 const AuthProvider = ({ children }) => {
     const auth = getAuth(app);
     const axiosPublicly = useAxiosPublic()
     const [registered, setRegistered] = useState(false);
-    const [user, setUser] = useState([]);
-    const [loading, setLoading] = useState(null);
+    const [user, setUser] = useState([]); //useState(null)
+    const [loading, setLoading] = useState(null); //useState(true)
 
 
 
@@ -40,7 +38,7 @@ const AuthProvider = ({ children }) => {
 
         })
         return (() => unSubscribe())
-    }, [auth, axiosPublicly])
+    }, [auth, axiosPublicly]) //  auth is not needed as a dependency
 
 
     const createUser = (email, password) => {
