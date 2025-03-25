@@ -7,7 +7,11 @@ import ErrorPage from "../shared components/ErrorPage";
 import Home from "../pages/home/Home";
 import JoinUs from "../auths/JoinUs";
 import About from "../pages/about/About";
+
 import Contact from "../pages/Contact/Contact";
+
+import DashboardLayout from "../pages/dashboard/DashboardLayout";
+
 
 const router = createBrowserRouter([
     {
@@ -38,6 +42,10 @@ const router = createBrowserRouter([
 
         ]
     },
+    {
+        path: "/dashboard",
+        element: <DashboardLayout/>
+    }
 ]);
 
 
