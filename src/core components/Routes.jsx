@@ -11,7 +11,6 @@ import DashboardLayout from "../pages/dashboard/DashboardLayout";
 
 import Contact from "../pages/Contact/Contact";
 
-import DashboardLayout from "../pages/dashboard/DashboardLayout";
 
 
 const router = createBrowserRouter([
