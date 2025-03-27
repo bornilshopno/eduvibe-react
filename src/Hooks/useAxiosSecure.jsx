@@ -20,8 +20,7 @@ const useAxiosSecure = () => {
             Promise.reject(error)
         }
     );
-    //response cases
-    //useEffect used to navigate and logout user
+  
 
     useEffect(() => {
         axiosSecurely.interceptors.response.use(function (response) {

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+// import { zodResolver } from "@hookform/resolvers";
+
 import { z } from "zod";
 import { Mail, MapPin } from "lucide-react";
 
@@ -88,7 +90,7 @@ export default function ContactForm() {
         </div>
         <div className="flex items-center space-x-3">
           <Mail className="text-primary" />
-          <p>beyond.ui1007@gmail.com.satya</p>
+          <p>beyond.ui1007@gmail.com</p>
         </div>
       </div>
     </div>
