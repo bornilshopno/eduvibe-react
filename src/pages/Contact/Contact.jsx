@@ -88,7 +88,7 @@ export default function ContactForm() {
         </div>
         <div className="flex items-center space-x-3">
           <Mail className="text-primary" />
-          <p>beyond.ui1007@gmail.com</p>
+          <p>beyond.ui1007@gmail.com.satya</p>
         </div>
       </div>
     </div>
