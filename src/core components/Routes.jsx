@@ -10,6 +10,7 @@ import About from "../pages/about/About";
 import DashboardLayout from "../pages/dashboard/DashboardLayout";
 
 import Contact from "../pages/Contact/Contact";
+import ChatRoom from "../pages/ChatRoom/ChatRoom";
 
 
 
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
                 path: "/join-us",
                 element:<JoinUs/>
             },
+            // {
+            //     path: "/chat",
+            //     element: <ChatRoom></ChatRoom>
+            // }
 
         ]
     },
