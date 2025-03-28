@@ -5,6 +5,7 @@ import AboutHeading from '../about/AboutHeading';
 import Features from './Features';
 import Integration from './Integration';
 import Testimonial from './Testimonial';
+import ChatRoom from '../ChatRoom/ChatRoom';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Features />
             <Integration />
             <Testimonial />
+            <ChatRoom></ChatRoom>
         </div>
     );
 };

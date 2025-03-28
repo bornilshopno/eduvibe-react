@@ -4,7 +4,7 @@ import useAuth from "./useAuth";
 import { useNavigate } from "react-router-dom";
 
 export const axiosSecurely = axios.create({
-    baseURL: "https://server-side-med-camps.vercel.app"
+    baseURL: "https://edu-vibe-back-end.vercel.app"
 })
 
 const useAxiosSecure = () => {
@@ -20,8 +20,7 @@ const useAxiosSecure = () => {
             Promise.reject(error)
         }
     );
-    //response cases
-    //useEffect used to navigate and logout user
+  
 
     useEffect(() => {
         axiosSecurely.interceptors.response.use(function (response) {
