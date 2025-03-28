@@ -4,7 +4,7 @@ import { io } from "socket.io-client";
 import { X, MessageCircle } from "lucide-react"; // Icons
 
 //Establishing a WebSocket connection to the backend server.
-const socket = io("http://localhost:5000");// Connects to backend
+const socket = io("https://edu-vibe-back-end.vercel.app");// Connects to backend
 
 const ChatRoom = () => {
   const [messages, setMessages] = useState([]); //Stores all chat messages
