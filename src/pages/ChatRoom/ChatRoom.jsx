@@ -1,51 +1,18 @@
-// import { useEffect, useState } from "react";
-// import { io } from "socket.io-client";
-
-// const socket = io("http://localhost:5000");
-
-// const ChatRoom = () => {
-//   const [messages, setMessages] = useState([]);
-//   const [message, setMessage] = useState("");
-
-//   useEffect(() => {
-//     socket.on("message", (msg) => {
-//       setMessages((prev) => [...prev, msg]);
-//     });
-//   }, []);
-
-//   const sendMessage = () => {
-//     socket.emit("message", message);
-//     setMessage("");
-//   };
-
-//   return (
-//     <div>
-//       <h1>Live Chat</h1>
-//       <div>
-//         {messages.map((msg, index) => (
-//           <p key={index}>{msg}</p>
-//         ))}
-//       </div>
-//       <input value={message} onChange={(e) => setMessage(e.target.value)} />
-//       <button onClick={sendMessage}>Send</button>
-//     </div>
-//   );
-// };
-
-// export default ChatRoom;
 
 import { useEffect, useState, useRef } from "react";
 import { io } from "socket.io-client";
 import { X, MessageCircle } from "lucide-react"; // Icons
 
-const socket = io("http://localhost:5000");
+//Establishing a WebSocket connection to the backend server.
+const socket = io("http://localhost:5000");// Connects to backend
 
 const ChatRoom = () => {
-  const [messages, setMessages] = useState([]);
-  const [message, setMessage] = useState("");
+  const [messages, setMessages] = useState([]); //Stores all chat messages
+  const [message, setMessage] = useState(""); //Stores the current message being typed 
   const [isOpen, setIsOpen] = useState(false); // Toggle Chatbox
-  const messagesEndRef = useRef(null);
+  const messagesEndRef = useRef(null); //Used for auto-scrolling to the latest message (???)
 
+  //Listens for incoming messages from the server and updates the UI.
   useEffect(() => {
     socket.on("message", (msg) => {
       setMessages((prev) => [...prev, msg]);
@@ -56,6 +23,7 @@ const ChatRoom = () => {
     };
   }, []);
 
+  //Emits the message to the server when the user clicks "Send."
   const sendMessage = () => {
     if (message.trim() !== "") {
       socket.emit("message", message);
@@ -77,7 +45,7 @@ const ChatRoom = () => {
           className="bg-blue-600 text-white p-3 rounded-full shadow-lg flex items-center gap-2"
         >
           <MessageCircle size={20} />
-          Chat2
+          Chat
         </button>
       )}
 
