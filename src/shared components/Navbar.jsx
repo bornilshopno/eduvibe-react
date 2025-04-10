@@ -18,6 +18,7 @@ const Navbar = () => {
     <li><NavLink to={"/contact"}>Contact</NavLink></li>
     <li><NavLink to={"/dashboard"}>Dashboard</NavLink></li>
     {/* <li><NavLink to={"/chat"}>ChatRoom</NavLink></li> */}
+    <li><NavLink to={"/live-class"}>Live Class</NavLink></li>
   </>
   const darkModeHandler = () => {
     setDark(!dark);
