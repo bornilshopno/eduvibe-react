@@ -11,6 +11,8 @@ import DashboardLayout from "../pages/dashboard/DashboardLayout";
 
 import Contact from "../pages/Contact/Contact";
 import ChatRoom from "../pages/ChatRoom/ChatRoom";
+import LiveClass from "../pages/LiveClass/LiveClass";
+import Room from "../pages/LiveClass/Room";
 
 
 
@@ -43,8 +45,15 @@ const router = createBrowserRouter([
             // {
             //     path: "/chat",
             //     element: <ChatRoom></ChatRoom>
-            // }
-
+            // },
+            {
+                path:"/live-class",
+                element:<LiveClass></LiveClass>
+            },
+            {
+                path:"/room/:roomId",
+                element:<Room></Room>
+            },
         ]
     },
     {

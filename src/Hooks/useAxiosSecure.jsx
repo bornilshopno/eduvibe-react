@@ -4,7 +4,8 @@ import useAuth from "./useAuth";
 import { useNavigate } from "react-router-dom";
 
 export const axiosSecurely = axios.create({
-    baseURL: "https://edu-vibe-back-end.vercel.app"
+    // baseURL: "https://edu-vibe-back-end.vercel.app"
+    baseURL: "http://localhost:5000"
 })
 
 const useAxiosSecure = () => {
@@ -20,7 +21,7 @@ const useAxiosSecure = () => {
             Promise.reject(error)
         }
     );
-  
+
 
     useEffect(() => {
         axiosSecurely.interceptors.response.use(function (response) {
