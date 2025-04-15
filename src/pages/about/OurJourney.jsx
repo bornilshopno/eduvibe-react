@@ -21,7 +21,7 @@ const OurJourney = () => {
                         Transforming life
                         through education
                     </h2>
-                    <p className="mt-4 text-lg text-muted-foreground">We believe that everyone deserves the chance to learn and grow, no matter where they are in life. Our mission is to remove barriers to education, making it accessible to anyone with a desire to learn.</p>
+                    <p className="mt-4 text-lg text-gray-700">We believe that everyone deserves the chance to learn and grow, no matter where they are in life. Our mission is to remove barriers to education, making it accessible to anyone with a desire to learn.</p>
                     <div className='py-5'>
                         <FeatureText text="Accessibility for all learners"></FeatureText>
                         <FeatureText text="Bridging the education gap globally"></FeatureText>
@@ -41,7 +41,7 @@ const OurJourney = () => {
                    alt="mission"
                    className="rounded-lg object-cover w-full h-full"
                /> */}
-                    <div className='w-[600px] h-[500px]'>
+                    <div className=''>
                         <img src={photo3} alt="mission" className="object-cover w-full h-auto rounded-lg" />
                     </div>
                 </div>
