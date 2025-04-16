@@ -10,7 +10,7 @@ const Faq = () => {
                 titleSecond=" We're Here to Help"
                 description=""
             />
-            <div className='grid lg:grid-cols-2 gap-x-10 '>
+            <div className='grid lg:grid-cols-2 gap-x-10 gap-y-2'>
               <FaqQuestion 
               question="How do I join EduVibe virtual class?"
               answer=" To join a virtual class, log in to your account, navigate to the My Classes section, and click on the class link at the scheduled time. Ensure you have a stable internet connection and a compatible browser for the best experience."

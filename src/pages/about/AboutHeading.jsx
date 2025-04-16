@@ -6,7 +6,7 @@ import photo2 from '../../assets/Rectangle 21.png'
 
 const AboutHeading = () => {
     return (
-        <section className="container mx-auto py-4 md:py-7 px-3 md:px-10">
+        <section className="">
             <SectionHeading
                 title="What is"
                 titleSecond="EduVibe?"
@@ -58,7 +58,7 @@ const AboutHeading = () => {
                     </div>
                 </div>
             </div>
-            {/* <WhatDo /> */}
+        
         </section>
     );
 };

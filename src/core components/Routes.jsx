@@ -13,52 +13,65 @@ import Contact from "../pages/Contact/Contact";
 import ChatRoom from "../pages/ChatRoom/ChatRoom";
 import LiveClass from "../pages/LiveClass/LiveClass";
 import Room from "../pages/LiveClass/Room";
+import AddNewCourse from "../pages/addNewCourse/addNewCourse";
+import CourseDetails from "../pages/courseDetails/CourseDetails";
+import Courses from "../pages/courses/courses";
 
 
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <MainLayout/>,
-        errorElement: <ErrorPage/>,
-        children:[
+        element: <MainLayout />,
+        errorElement: <ErrorPage />,
+        children: [
             {
                 path: "/",
-                element:<Home/>
+                element: <Home />
             },
             {
                 path: "/contact",
-                element:<Contact/>
+                element: <Contact />
             },
-            {
-                path: "/courses",
-                element:<Home/>
-            },
+        
             {
                 path: "/about",
-                element:<About/>
+                element: <About />
             },
             {
                 path: "/join-us",
-                element:<JoinUs/>
+                element: <JoinUs />
             },
             // {
             //     path: "/chat",
             //     element: <ChatRoom></ChatRoom>
             // },
             {
-                path:"/live-class",
-                element:<LiveClass></LiveClass>
+                path: "/live-class",
+                element: <LiveClass></LiveClass>
             },
             {
-                path:"/room/:roomId",
-                element:<Room></Room>
+                path: "/room/:roomId",
+                element: <Room></Room>
             },
+            {
+                path: "/courses",
+                element: <Courses />,
+            },
+            {
+                path: "/addNewCourse",
+                element: <AddNewCourse />,
+            },
+            {
+                path: "/courses/:id",
+                element: <CourseDetails />,
+            },
+         
         ]
     },
     {
         path: "/dashboard",
-        element:<DashboardLayout/>
+        element: <DashboardLayout />
 
     }
 ]);

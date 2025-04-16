@@ -6,7 +6,7 @@ import Navbar from '../shared components/Navbar';
 
 const MainLayout = () => {
     return (
-        <div>
+        <div className='bg-gray-50 dark:bg-gray-800'>
             <Navbar/>
             <Outlet/>
             <Footer/>

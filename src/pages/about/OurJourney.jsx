@@ -21,7 +21,7 @@ const OurJourney = () => {
                         Transforming life
                         through education
                     </h2>
-                    <p className="mt-4 text-lg text-muted-foreground">We believe that everyone deserves the chance to learn and grow, no matter where they are in life. Our mission is to remove barriers to education, making it accessible to anyone with a desire to learn.</p>
+                    <p className="mt-4 text-lg text-gray-700">We believe that everyone deserves the chance to learn and grow, no matter where they are in life. Our mission is to remove barriers to education, making it accessible to anyone with a desire to learn.</p>
                     <div className='py-5'>
                         <FeatureText text="Accessibility for all learners"></FeatureText>
                         <FeatureText text="Bridging the education gap globally"></FeatureText>
@@ -41,7 +41,7 @@ const OurJourney = () => {
                    alt="mission"
                    className="rounded-lg object-cover w-full h-full"
                /> */}
-                    <div className='w-[600px] h-[500px]'>
+                    <div className=''>
                         <img src={photo3} alt="mission" className="object-cover w-full h-auto rounded-lg" />
                     </div>
                 </div>
@@ -50,7 +50,7 @@ const OurJourney = () => {
             {/* vision  */}
             <div className='flex flex-col lg:flex-row-reverse gap-12'>
                 {/* Text Section */}
-                <div className="flex flex-col justify-center lg:w-1/2">
+                <div className="flex flex-col justify-center lg:w-5/12">
                     <h1 className="md:text-3xl text-xl text-primary-600  font-bold">
                         Our <span className="text-secondary-600">Vision</span>
                     </h1>
@@ -58,7 +58,7 @@ const OurJourney = () => {
                         Shaping the future of education
 
                     </h2>
-                    <p className="mt-4 text-lg text-muted-foreground">Our vision is to become a leader in online education, known for innovation and excellence. As technology evolves, so do we. By integrating new learning technologies and methodologies, we aim to offer an even more immersive and impactful learning experience.</p>
+                    <p className="mt-4 text-lg text-gray-700">Our vision is to become a leader in online education, known for innovation and excellence. As technology evolves, so do we. By integrating new learning technologies and methodologies, we aim to offer an even more immersive and impactful learning experience.</p>
                     <div className='py-5'>
                         <FeatureText text="Leveraging the latest technologies"></FeatureText>
                         <FeatureText text="Expanding our course offerings"></FeatureText>
@@ -79,7 +79,7 @@ const OurJourney = () => {
                         className="rounded-lg object-cover w-full h-full"
                     /> */}
 
-                    <div className='w-[600px] h-[500px]'>
+                    <div className='text-left items-center'>
                         <img src={photo4} alt="vision" className="object-cover w-full h-auto rounded-lg" />
                     </div>
                 </div>
