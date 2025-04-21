@@ -15,7 +15,7 @@ import LiveClass from "../pages/LiveClass/LiveClass";
 import Room from "../pages/LiveClass/Room";
 import AddNewCourse from "../pages/addNewCourse/addNewCourse";
 import CourseDetails from "../pages/courseDetails/CourseDetails";
-import Courses from "../pages/courses/courses";
+import Courses from "../pages/courses/Courses";
 
 
 
