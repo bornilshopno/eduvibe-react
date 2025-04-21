@@ -16,7 +16,7 @@ export default function AddNewCourse() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/courses", {
+    const response = await fetch("https://eduvibe-react-backend.onrender.com/courses", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -121,7 +121,7 @@ export default function AddNewCourse() {
           </div>
           <button
             type="submit"
-            className="bg-blue-600 text-white w-full py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
+            className="w-full py-2 px-4 rounded-md hover:bg-blue-700 transition-colors bg-primary-400 text-white  dark:bg-primary-600"
           >
             Add Course
           </button>
