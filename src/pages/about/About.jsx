@@ -5,7 +5,7 @@ import Faq from './Faq';
 
 const About = () => {
     return (
-        <div>
+        <div className='container mx-auto py-4 md:py-7 px-3 md:px-10'>
             <AboutHeading/>
             <OurJourney/>
             <Faq/>
