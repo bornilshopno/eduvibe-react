@@ -8,7 +8,10 @@ export default function Courses() {
   useEffect(() => {
     async function fetchCourses() {
       try {
-        const res = await fetch("http://localhost:5000/courses");
+        // const res = await fetch("http://localhost:5000/courses");
+        const res = await fetch(
+          "https://eduvibe-server-m88v.onrender.com/courses"
+        );
         if (!res.ok) {
           console.error("Failed to fetch courses, status:", res.status);
           console.error("Response Body:", await res.text());
