@@ -1,12 +1,70 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project: EduVibe
+A virtual classroom
 
-Currently, two official plugins are available:
+### Project Overview:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This website will serve as a as virtual classroom which supports live video class and other academic functionalities including live chat, assessments etc
 
-## Expanding the ESLint configuration
+### Key Features of this Application
+* Platform to be used by anyone
+* User Management
+* Database Management
+* JWT Secruity Using Local Storage
+* Responsive for all devices- mobile, tablet and desktop views.
+* Enviromnet variables for user and data management to secure information
+* Video Conference for Teachers, Mentors and Students
+* Screen sharing for teachers.
+* Real-time chat (using Socket.io).
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Framework/Library Used
+* React Js
+* React Router Dom
+* Tailwind CSS
+* Daisy UI
+* Node Js
+* MongoDB
+* Express
+
+### Dependencies
+   * @smastrom/react-rating
+   * @stripe/react-stripe-js
+   * @tanstack/react-query
+   * axios
+   * date-fns
+   * firebase
+   * localforage
+   * lottie-react
+   * match-sorter
+   * react-dom
+   * react-helmet-async
+   * react-hook-form
+   * react-icons
+   * react-modal
+   * react-router-dom
+   * react-simple-captcha
+   * react-toastify
+   * react-tooltip
+   * recharts
+   * sort-by
+   * stripe
+   * sweetalert2
+   * swiper
+
+## Step by step guideline to start this project locally :
+** Open the project folder in editor.
+** See all the technologie version are updated in current version.
+** then open the editor terminal and write npm run dev press enter key.
+** terminal give you a local Server link copy the link and past your browser run the link.
+
+### GitHub Repository
+* Client Side
+**https://github.com/bornilshopno/eduvibe-react**
+
+* Server Side
+**https://github.com/bornilshopno/eduvibe-react-backend**
+
+### Live Page Link:
+
+**https://eduvibe-vc.netlify.app/**
+
