@@ -1,14 +1,12 @@
-
 import { useEffect, useState, useRef } from "react";
 import { io } from "socket.io-client";
 import { X, MessageCircle } from "lucide-react"; // Icons
 
 //Establishing a WebSocket connection to the backend server.
-const socket = io("https://edu-vibe-back-end.vercel.app");// Connects to backend
-
+const socket = io("https://eduvibe-react-backend.onrender.com");// Connects to backend
 const ChatRoom = () => {
   const [messages, setMessages] = useState([]); //Stores all chat messages
-  const [message, setMessage] = useState(""); //Stores the current message being typed 
+  const [message, setMessage] = useState(""); //Stores the current message being typed
   const [isOpen, setIsOpen] = useState(false); // Toggle Chatbox
   const messagesEndRef = useRef(null); //Used for auto-scrolling to the latest message (???)
 
@@ -55,7 +53,10 @@ const ChatRoom = () => {
           {/* Header */}
           <div className="bg-blue-600 text-white p-3 flex justify-between items-center rounded-t-lg">
             <span className="font-semibold">Live Chat</span>
-            <button onClick={() => setIsOpen(false)} className="hover:text-gray-300">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="hover:text-gray-300"
+            >
               <X size={20} />
             </button>
           </div>
@@ -63,8 +64,19 @@ const ChatRoom = () => {
           {/* Messages Area */}
           <div className="flex-1 overflow-y-auto p-3 space-y-2">
             {messages.map((msg, index) => (
-              <div key={index} className={`flex ${index % 2 === 0 ? "justify-end" : "justify-start"}`}>
-                <div className={`p-2 max-w-xs text-sm rounded-lg ${index % 2 === 0 ? "bg-blue-500 text-white" : "bg-gray-300 text-black"}`}>
+              <div
+                key={index}
+                className={`flex ${
+                  index % 2 === 0 ? "justify-end" : "justify-start"
+                }`}
+              >
+                <div
+                  className={`p-2 max-w-xs text-sm rounded-lg ${
+                    index % 2 === 0
+                      ? "bg-blue-500 text-white"
+                      : "bg-gray-300 text-black"
+                  }`}
+                >
                   {msg}
                 </div>
               </div>
@@ -81,7 +93,10 @@ const ChatRoom = () => {
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Type a message..."
             />
-            <button onClick={sendMessage} className="ml-2 bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600">
+            <button
+              onClick={sendMessage}
+              className="ml-2 bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600"
+            >
               Send
             </button>
           </div>
@@ -92,4 +107,3 @@ const ChatRoom = () => {
 };
 
 export default ChatRoom;
-

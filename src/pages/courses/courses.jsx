@@ -8,7 +8,7 @@ export default function Courses() {
   useEffect(() => {
     async function fetchCourses() {
       try {
-        const res = await fetch("http://localhost:5000/courses");
+        const res = await fetch("https://eduvibe-react-backend.onrender.com/courses");
         if (!res.ok) {
           console.error("Failed to fetch courses, status:", res.status);
           console.error("Response Body:", await res.text());
@@ -55,7 +55,7 @@ export default function Courses() {
 
       <button
         onClick={() => navigate("/addNewCourse")}
-        className="bg-green-500 text-white py-2 px-4 rounded-lg w-full mt-6"
+        className=" py-2 px-4 rounded-lg w-full mt-6 bg-primary-400 text-white dark:bg-primary-600"
       >
         Add New Course
       </button>

@@ -33,7 +33,7 @@ export default function ContactForm() {
         ...values,
         createdAt: new Date()   
       }
-      const response = await fetch("https://eduvibe-react-backend.vercel.app/contacts", {
+      const response = await fetch("https://eduvibe-react-backend.onrender.com/contacts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(submissionData),
