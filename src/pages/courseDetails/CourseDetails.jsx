@@ -9,10 +9,7 @@ export default function CourseDetails() {
   useEffect(() => {
     async function fetchCourseDetails() {
       try {
-        // const res = await fetch(`http://localhost:5000/courses/${id}`);
-        const res = await fetch(
-          `https://eduvibe-server-m88v.onrender.com/courses/${id}`
-        );
+        const res = await fetch(`https://eduvibe-react-backend.onrender.com/courses/${id}`);
         if (!res.ok) {
           throw new Error("Failed to fetch course details");
         }
